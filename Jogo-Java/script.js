@@ -4,11 +4,10 @@ function numerasledas(){
 }
 
 function adede() { 
-    const numero = parseInt(document.getElementById("numero").value);
     const pegaNumeroAleatorio = numerasledas()
 
-    if (numero == pegaNumeroAleatorio)
-        alert("Você acertou")
-
-    else alert("Você errou")
+    do{
+        const achue = prompt("Adivinhe o numero")
+    }
+    while(achue != pegaNumeroAleatorio)
 }
