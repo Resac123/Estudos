@@ -4,13 +4,16 @@ function numerasledas(){
 }
 
 function adede() {
-    const palpite = ""
+    let palpite = ""
+    let tentativas = 3
     const numero = numerasledas()
 
     do{
         const palpite = parseInt(prompt('Adivinhe o numero')) 
-        if(palpite != numero)
-            alert('Errou')
+        if(palpite != numero){
+            tentativas--
+            alert(`Errou, voce ainda tem ${tentativas}`)
+        }
     }
     while(palpite != numero)
  }
