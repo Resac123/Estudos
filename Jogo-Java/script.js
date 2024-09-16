@@ -3,11 +3,15 @@ function numerasledas(){
     return numeroAleatorio
 }
 
-function adede() { 
-    const pegaNumeroAleatorio = numerasledas()
+function adede() {
+    const palpite = ""
+    const numero = numerasledas()
 
     do{
-        const achue = prompt("Adivinhe o numero")
+        const palpite = parseInt(prompt('Adivinhe o numero')) 
+        if(palpite != numero)
+            alert('Errou')
     }
-    while(achue != pegaNumeroAleatorio)
-}
+    while(palpite != numero)
+ }
+
