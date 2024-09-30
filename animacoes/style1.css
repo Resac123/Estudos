@@ -1,0 +1,64 @@
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .banner {
+    animation: fade 3s ease-in-out infinite;
+  }
+  
+  
+  @keyframes pulse {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .botao {
+    animation: pulse 2s infinite;
+  }
+  
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .texto {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: typing 2s steps(10, end) infinite;
+    background-color: #ff6600;
+  }
+  
+  
+  
+  
+  @keyframes slideIn {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+  }
+  
+  .sobre-nos {
+    animation: slideIn 1.5s ease-in infinite;
+    text-align: center;
+  }
+  
+  .sobre-nos img, .sobre-nos2 img{
+    width: 500px;
+    box-shadow: 0 0 10px 10px rgb(94, 255, 0);
+  }
+  
+  
+  
+  @keyframes slideOut {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .sobre-nos2 {
+    animation: slideOut 1.5s ease-out infinite;
+    text-align: center;
+  }
+  

@@ -1,0 +1,35 @@
+body {
+  color: #fff;
+  margin: 30px;
+}
+
+.original {
+  background: #d2d2d2;
+  margin: 10px 15px;
+  width: 95px;
+}
+
+.box {
+  background: red;
+  height: 95px;
+  width: 95px;
+  line-height: 95px;
+  text-align: center;
+  transform: rotate(-55deg);
+
+}
+.spin {
+  cursor: pointer;
+}
+.spin:hover {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: skew(0, 0);
+  }
+  100% {
+    transform: skew(180deg, 30deg);
+  }
+}
