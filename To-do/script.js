@@ -41,4 +41,7 @@ function adicionar(){
     })
 
     console.log(personagens)
+
 }
+
+const numeros = [2,4,6,8]
